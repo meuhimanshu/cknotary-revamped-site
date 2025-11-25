@@ -1,6 +1,13 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Mail, Phone, MapPin, Clock, Facebook } from "lucide-react";
+import {
+  Mail,
+  Phone,
+  MapPin,
+  Clock,
+  ExternalLink,
+  Github,
+} from "lucide-react";
 
 export function Footer() {
   return (
@@ -97,25 +104,60 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 flex flex-col items-center justify-center gap-4 border-t border-border pt-8 sm:flex-row sm:justify-between">
-          <p className="text-sm text-muted-foreground text-center sm:text-left">
-            © {new Date().getFullYear()} Chelsea Kramer Notary Public. All rights reserved.
-          </p>
-          <div className="flex items-center justify-center gap-4">
-            <a
-              href="https://www.facebook.com/CKNotary/"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-muted-foreground hover:text-primary transition-colors"
-              aria-label="Facebook"
-            >
-              <Facebook className="h-5 w-5" />
-            </a>
+        <div className="mt-12 space-y-6 border-t border-border pt-8">
+          <div className="flex flex-col gap-6 lg:flex-row lg:items-start lg:justify-between">
+            <div className="space-y-3 text-center lg:text-left">
+              <p className="text-sm font-semibold text-foreground">Demo Revamp Notice</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                This site is a demo revamp of the original Chelsea Kramer Notary experience. Head to the official website below for the live services.
+              </p>
+              <div className="flex items-center justify-center lg:justify-start gap-3">
+                <a
+                  href="https://cknotary.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-border/80 bg-foreground/5 dark:bg-foreground/15 p-2 text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  aria-label="Visit the original Chelsea Kramer Notary website"
+                >
+                  <ExternalLink className="h-5 w-5" />
+                </a>
+              </div>
+              </div>
+
+            <div className="space-y-3 text-center lg:text-left">
+              <p className="text-sm font-semibold text-foreground">About the Creator</p>
+              <p className="text-sm text-muted-foreground leading-relaxed">
+                Revamp built by <span className="font-semibold text-foreground">Himanshu Singh</span> — always a learner and still learning. Discover more of his work or connect through the links below.
+              </p>
+              <div className="flex items-center justify-center lg:justify-start gap-3">
+                <a
+                  href="https://github.com/meuhimanshu"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-border/80 bg-foreground/5 dark:bg-foreground/15 p-2 text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                  aria-label="Himanshu Singh on GitHub"
+                >
+                  <Github className="h-5 w-5" />
+                </a>
+                <a
+                  href="https://huesofhimanshu.com/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center justify-center rounded-full border border-border/80 bg-foreground/5 dark:bg-foreground/15 px-3 py-2 text-xs font-semibold text-foreground shadow-sm transition-colors hover:border-primary hover:text-primary hover:bg-primary/10 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-primary"
+                >
+                  Portfolio
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div className="flex flex-col items-center justify-center gap-3 text-center sm:text-left">
+            <p className="text-sm text-muted-foreground">
+              Built for demonstration purposes. For notarization needs, please use the official Chelsea Kramer Notary website.
+            </p>
           </div>
         </div>
       </div>
     </footer>
   );
 }
-
-
