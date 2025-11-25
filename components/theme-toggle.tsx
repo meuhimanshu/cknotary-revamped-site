@@ -5,6 +5,15 @@ import { Moon, Sun } from "lucide-react";
 import { useTheme } from "next-themes";
 import { Button } from "@/components/ui/button";
 
+type ViewTransition = {
+  ready: Promise<void>;
+  finished: Promise<void>;
+};
+
+type DocumentWithViewTransition = Document & {
+  startViewTransition?: (callback: () => void) => ViewTransition;
+};
+
 export function ThemeToggle() {
   const { theme, setTheme } = useTheme();
   const [mounted, setMounted] = React.useState(false);
@@ -16,10 +25,20 @@ export function ThemeToggle() {
     setMounted(true);
   }, []);
 
-  const handleThemeToggle = (e: React.MouseEvent<HTMLButtonElement>) => {
+  const handleThemeToggle = () => {
     if (!buttonRef.current || isAnimating) return;
 
     const newTheme = theme === "dark" ? "light" : "dark";
+    const doc =
+      typeof document !== "undefined"
+        ? (document as DocumentWithViewTransition)
+        : null;
+
+    if (!doc || typeof window === "undefined") {
+      setTheme(newTheme);
+      return;
+    }
+
     setIsAnimating(true);
 
     // Get button position
@@ -34,9 +53,9 @@ export function ThemeToggle() {
     ) * 2;
 
     // Check if View Transitions API is supported
-    if (typeof document !== 'undefined' && 'startViewTransition' in document) {
+    if (typeof doc.startViewTransition === "function") {
       // Use View Transitions API
-      const transition = (document as any).startViewTransition(() => {
+      const transition = doc.startViewTransition(() => {
         setTheme(newTheme);
       });
 
@@ -47,7 +66,7 @@ export function ThemeToggle() {
           `circle(${endRadius}px at ${x}px ${y}px)`,
         ];
 
-        document.documentElement.animate(
+        doc.documentElement.animate(
           {
             clipPath,
           },
@@ -66,7 +85,7 @@ export function ThemeToggle() {
       });
     } else {
       // Fallback: Create circle blur element manually
-      const circle = document.createElement("div");
+      const circle = doc.createElement("div");
       circle.style.cssText = `
         position: fixed;
         left: ${x}px;
@@ -81,7 +100,7 @@ export function ThemeToggle() {
         box-shadow: 0 0 100px 50px ${newTheme === "dark" ? "#0a0a0a" : "#ffffff"};
       `;
 
-      document.body.appendChild(circle);
+      doc.body.appendChild(circle);
 
       // Force reflow
       circle.offsetHeight;
@@ -137,4 +156,3 @@ export function ThemeToggle() {
     </Button>
   );
 }
-
