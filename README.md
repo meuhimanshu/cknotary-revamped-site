@@ -5,7 +5,7 @@
 
 ## 🌐 Quick Access
 - **Legacy Site:** https://cknotary.com/  
-- **Vercel Deployment:** https://somethingsomething.vercel.app/
+- **Vercel Deployment:** https://cknotary-revamped-site.vercel.app/
 
 ---
 
