@@ -79,7 +79,7 @@ export function Footer() {
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <Mail className="h-4 w-4 flex-shrink-0" />
-                <a href="mailto:info@cknotary.ca" className="hover:text-primary transition-colors break-all">
+                <a href="mailto:info@sjnotary.ca" className="hover:text-primary transition-colors break-all">
                   info@sjnotary.ca
                 </a>
               </div>

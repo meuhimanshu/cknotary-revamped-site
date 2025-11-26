@@ -92,13 +92,13 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="tel:250-542-1111"
+                    href="tel:555-123-4567"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    250-542-1111
+                    555-123-4567
                   </a>
                   <p className="text-sm text-muted-foreground mt-1">
-                    Fax: 250-542-1112
+                    Fax: 555-123-4568
                   </p>
                 </CardContent>
               </Card>
@@ -114,10 +114,10 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <a
-                    href="mailto:info@cknotary.ca"
+                    href="mailto:info@sjnotary.ca"
                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
-                    info@cknotary.ca
+                    info@sjnotary.ca
                   </a>
                 </CardContent>
               </Card>
@@ -133,7 +133,7 @@ export default function ContactPage() {
                 </CardHeader>
                 <CardContent>
                   <address className="not-italic text-muted-foreground">
-                    101 – 5145 26th Street
+                    123 Maple Avenue
                     <br />
                     Vernon, BC
                   </address>
@@ -150,7 +150,7 @@ export default function ContactPage() {
                   <CardTitle className="text-lg">Hours</CardTitle>
                 </CardHeader>
                 <CardContent>
-                  <p className="text-muted-foreground">555-123-4567</p>
+
                   <p className="text-muted-foreground">
                     Monday – Friday
                     <br />
