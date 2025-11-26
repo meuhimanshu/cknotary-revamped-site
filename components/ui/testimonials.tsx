@@ -19,7 +19,7 @@ const testimonials: Testimonial[] = [
     name: "Sarah Mitchell",
     image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=400&h=400&fit=crop",
     rating: 5,
-    text: "Chelsea made the entire estate planning process so simple and stress-free. Her professionalism and attention to detail gave us complete peace of mind.",
+    text: "Sarah made the entire estate planning process so simple and stress-free. Her professionalism and attention to detail gave us complete peace of mind.",
     service: "Estate Planning"
   },
   {
@@ -35,7 +35,7 @@ const testimonials: Testimonial[] = [
     name: "Jennifer Thompson",
     image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=400&h=400&fit=crop",
     rating: 5,
-    text: "Very professional and knowledgeable. Chelsea explained everything clearly and made sure all our documents were in order.",
+    text: "Very professional and knowledgeable. Sarah explained everything clearly and made sure all our documents were in order.",
     service: "Notarization"
   },
   {
@@ -51,7 +51,7 @@ const testimonials: Testimonial[] = [
     name: "Emily Roberts",
     image: "https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=400&h=400&fit=crop",
     rating: 5,
-    text: "Chelsea helped us with our will preparation. She was patient, professional, and made sure we understood every detail.",
+    text: "Sarah helped us with our will preparation. She was patient, professional, and made sure we understood every detail.",
     service: "Estate Planning"
   },
   {
@@ -77,7 +77,7 @@ export function Testimonials() {
               Don&apos;t just take our word
             </h2>
             <p className="mx-auto max-w-[700px] text-muted-foreground text-sm md:text-base leading-relaxed">
-              See what our clients have to say about their experience with Chelsea Kramer Notary Public
+              See what our clients have to say about their experience with Sarah Jenkins Notary Public
             </p>
           </div>
         </FadeIn>

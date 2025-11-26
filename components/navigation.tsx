@@ -41,11 +41,19 @@ export function Navigation() {
             {/* Logo */}
             <Link href="/" className="flex items-center flex-shrink-0">
               <Image
-                src="/cklogo.png"
-                alt="Chelsea Kramer Notary Corporation"
-                width={180}
-                height={54}
-                className="h-10 w-auto"
+                src="/lightmodeLogo.png"
+                alt="Sarah Jenkins Notary Corporation"
+                width={240}
+                height={72}
+                className="h-16 w-auto block dark:hidden"
+                priority
+              />
+              <Image
+                src="/DarkmodeLogo.png"
+                alt="Sarah Jenkins Notary Corporation"
+                width={240}
+                height={72}
+                className="h-16 w-auto hidden dark:block"
                 priority
               />
             </Link>
@@ -90,9 +98,9 @@ export function Navigation() {
                 )}
                 size="sm"
               >
-                <a href="tel:250-542-1111" className="flex items-center gap-2">
+                <a href="tel:555-123-4567" className="flex items-center gap-2">
                   <Phone className="h-4 w-4" />
-                  <span className="hidden lg:inline">250-542-1111</span>
+                  <span className="hidden lg:inline">555-123-4567</span>
                   <span className="lg:hidden">Call</span>
                 </a>
               </Button>
@@ -201,10 +209,10 @@ export function Navigation() {
                 {link.label}
               </Link>
             ))}
-            
+
             {/* Divider */}
             <div className="h-6 w-px bg-border mx-1" />
-            
+
             {/* Facebook Icon */}
             <Button
               asChild
@@ -221,7 +229,7 @@ export function Navigation() {
                 <Facebook className="h-4 w-4" />
               </a>
             </Button>
-            
+
             {/* Theme Toggle */}
             <ThemeToggle />
           </motion.nav>
@@ -293,9 +301,9 @@ export function Navigation() {
                     size="lg"
                     className="w-full rounded-full bg-[#D4AF37] hover:bg-[#B8941F] text-primary shadow-lg"
                   >
-                    <a href="tel:250-542-1111" className="flex items-center justify-center gap-2">
+                    <a href="tel:555-123-4567" className="flex items-center justify-center gap-2">
                       <Phone className="h-5 w-5" />
-                      250-542-1111
+                      555-123-4567
                     </a>
                   </Button>
                 </motion.div>

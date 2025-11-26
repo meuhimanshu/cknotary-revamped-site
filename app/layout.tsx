@@ -25,11 +25,11 @@ const playfair = Playfair_Display({
 });
 
 export const metadata: Metadata = {
-  title: "Chelsea Kramer Notary Public | Vernon, BC",
+  title: "Sarah Jenkins Notary Public | Vernon, BC",
   description: "Professional notary public services in Vernon, BC. Specializing in estate planning, real estate transactions, and notarizations. A notary's word is as good as gold.",
   icons: {
-    icon: "/cklogo.png",
-    apple: "/cklogo.png",
+    icon: "/sj_logo.png",
+    apple: "/sj_logo.png",
   },
 };
 

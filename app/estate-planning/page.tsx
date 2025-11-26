@@ -14,7 +14,7 @@ export default function EstatePlanningPage() {
       <section className="relative min-h-[350px] sm:min-h-[450px] flex items-center justify-center bg-gradient-to-br from-primary via-primary/95 to-primary/90 dark:from-primary/10 dark:via-primary/5 dark:to-background text-primary-foreground dark:text-foreground w-full overflow-hidden antialiased">
         {/* Subtle Background Image - Family/Elderly Theme */}
         <div className="absolute inset-0 opacity-[0.09] dark:opacity-[0.03]">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1511895426328-dc8714191300?w=1600&auto=format&fit=crop')",
@@ -22,16 +22,16 @@ export default function EstatePlanningPage() {
             }}
           />
         </div>
-        
+
         {/* Spotlight Effect */}
         <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#D4AF37" />
-        
+
         {/* Background Grid */}
         <BackgroundGrid />
-        
+
         {/* Vignette Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent dark:from-background/80 dark:via-transparent dark:to-transparent opacity-50" />
-        
+
         <div className="container mx-auto max-w-7xl relative z-10 px-4 md:px-6">
           <FadeIn>
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -251,8 +251,8 @@ export default function EstatePlanningPage() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground dark:border-foreground text-primary-foreground dark:text-foreground hover:bg-primary-foreground/10 dark:hover:bg-foreground/10 w-full sm:w-auto">
-                  <a href="tel:250-542-1111">
-                    Call 250-542-1111
+                  <a href="tel:555-123-4567">
+                    Call 555-123-4567
                   </a>
                 </Button>
               </div>

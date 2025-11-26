@@ -14,7 +14,7 @@ export default function RealEstatePage() {
       <section className="relative min-h-[350px] sm:min-h-[450px] flex items-center justify-center bg-gradient-to-br from-primary via-primary/95 to-primary/90 dark:from-primary/10 dark:via-primary/5 dark:to-background text-primary-foreground dark:text-foreground w-full overflow-hidden antialiased">
         {/* Subtle Background Image - Home/Property Theme */}
         <div className="absolute inset-0 opacity-[0.08] dark:opacity-[0.03]">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1560518883-ce09059eeffa?w=1600&auto=format&fit=crop')",
@@ -22,16 +22,16 @@ export default function RealEstatePage() {
             }}
           />
         </div>
-        
+
         {/* Spotlight Effect */}
         <Spotlight className="-top-40 left-0 md:left-60 md:-top-20" fill="#D4AF37" />
-        
+
         {/* Background Grid */}
         <BackgroundGrid />
-        
+
         {/* Vignette Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent dark:from-background/80 dark:via-transparent dark:to-transparent opacity-50" />
-        
+
         <div className="container mx-auto max-w-7xl relative z-10 px-4 md:px-6">
           <FadeIn>
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -131,17 +131,17 @@ export default function RealEstatePage() {
                   Expert Real Estate Services
                 </h2>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed px-4 lg:px-0">
-                  Notaries public in BC receive in-depth training on transferring land, buildings, manufactured homes, 
-                  and strata properties. Our goal is to eliminate the stress and confusion that can accompany the 
+                  Notaries public in BC receive in-depth training on transferring land, buildings, manufactured homes,
+                  and strata properties. Our goal is to eliminate the stress and confusion that can accompany the
                   purchase, sale, or mortgage of real property.
                 </p>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed px-4 lg:px-0">
-                  Whether you&apos;re a first-time buyer or an experienced investor, we&apos;ll guide you through every 
-                  step of the process. Contact us once your purchase-and-sale agreement is finalized, and we&apos;ll 
+                  Whether you&apos;re a first-time buyer or an experienced investor, we&apos;ll guide you through every
+                  step of the process. Contact us once your purchase-and-sale agreement is finalized, and we&apos;ll
                   take care of the rest.
                 </p>
                 <p className="text-muted-foreground text-base md:text-lg leading-relaxed font-medium px-4 lg:px-0">
-                  We proudly serve the Okanagan Valley and are committed to making your real estate transaction 
+                  We proudly serve the Okanagan Valley and are committed to making your real estate transaction
                   as smooth as possible.
                 </p>
               </div>
@@ -228,8 +228,8 @@ export default function RealEstatePage() {
               <CardContent className="pt-8">
                 <blockquote className="space-y-4">
                   <p className="text-lg md:text-xl text-muted-foreground leading-relaxed italic">
-                    "Your home purchase is likely the largest financial transaction you&apos;ll ever make. 
-                    Choosing the right professional to guide you through the process is crucial. 
+                    "Your home purchase is likely the largest financial transaction you&apos;ll ever make.
+                    Choosing the right professional to guide you through the process is crucial.
                     We&apos;re committed to providing you with expert service, clear communication, and peace of mind."
                   </p>
                   <footer className="text-sm font-semibold text-primary">
@@ -261,8 +261,8 @@ export default function RealEstatePage() {
                   </Link>
                 </Button>
                 <Button size="lg" variant="outline" asChild className="bg-transparent border-2 border-primary-foreground dark:border-foreground text-primary-foreground dark:text-foreground hover:bg-primary-foreground/10 dark:hover:bg-foreground/10 w-full sm:w-auto">
-                  <a href="tel:250-542-1111">
-                    Call 250-542-1111
+                  <a href="tel:555-123-4567">
+                    Call 555-123-4567
                   </a>
                 </Button>
               </div>

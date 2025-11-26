@@ -1,6 +1,19 @@
 # ⚡ Chelsea Kramer Notary — Website Revamp  
 ### A clean, fast, next-gen web experience for a traditional professional service.
 
+# Sarah Jenkins Notary Public Website (Revamp Demo)
+
+This project is a revamped version of a local notary website, created for demonstration purposes. The original content has been replaced with generic names and images to respect privacy and copyright.
+
+## Changes Made
+- Replaced "Chelsea Kramer" with "Sarah Jenkins".
+- Replaced "Phyllis Simon" with "Emily Smith".
+- Replaced real photos with AI-generated professional headshots.
+- Rewrote text content to be generic but professional.
+
+## Original Project
+This project is a [Next.js](https://nextjs.org) application./
+
 ---
 
 ## 🌐 Quick Access

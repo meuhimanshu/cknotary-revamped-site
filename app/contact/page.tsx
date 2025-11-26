@@ -46,7 +46,7 @@ export default function ContactPage() {
       <section className="relative min-h-[300px] sm:min-h-[400px] flex items-center justify-center bg-gradient-to-br from-primary via-primary/95 to-primary/90 dark:from-primary/10 dark:via-primary/5 dark:to-background text-primary-foreground dark:text-foreground w-full overflow-hidden antialiased">
         {/* Subtle Background Image */}
         <div className="absolute inset-0 opacity-[0.07] dark:opacity-[0.03]">
-          <div 
+          <div
             className="absolute inset-0 bg-cover bg-center"
             style={{
               backgroundImage: "url('https://images.unsplash.com/photo-1423666639041-f56000c27a9a?w=1600&auto=format&fit=crop')",
@@ -54,16 +54,16 @@ export default function ContactPage() {
             }}
           />
         </div>
-        
+
         {/* Spotlight Effect */}
         <Spotlight className="-top-40 left-0 md:left-40 md:-top-20" fill="#D4AF37" />
-        
+
         {/* Background Grid */}
         <BackgroundGrid />
-        
+
         {/* Vignette Overlay */}
         <div className="absolute inset-0 bg-gradient-to-t from-primary/60 via-transparent to-transparent dark:from-background/80 dark:via-transparent dark:to-transparent opacity-50" />
-        
+
         <div className="container mx-auto max-w-7xl relative z-10 px-4 md:px-6">
           <FadeIn>
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -150,6 +150,7 @@ export default function ContactPage() {
                   <CardTitle className="text-lg">Hours</CardTitle>
                 </CardHeader>
                 <CardContent>
+                  <p className="text-muted-foreground">555-123-4567</p>
                   <p className="text-muted-foreground">
                     Monday – Friday
                     <br />
@@ -178,6 +179,8 @@ export default function ContactPage() {
                         <CheckCircle className="h-8 w-8 text-green-600" />
                       </div>
                       <h3 className="text-xl font-semibold">Message Sent!</h3>
+                      <p className="text-muted-foreground">123 Maple Avenue</p>
+                      <p className="text-muted-foreground">Vernon, BC</p>
                       <p className="text-muted-foreground text-center">
                         Thank you for contacting us. We&apos;ll respond shortly.
                       </p>
@@ -310,7 +313,7 @@ export default function ContactPage() {
                 How Can We Help You?
               </h2>
               <p className="text-base sm:text-lg text-muted-foreground px-4">
-                Whether you need estate planning, real estate services, or notarizations, 
+                Whether you need estate planning, real estate services, or notarizations,
                 we&apos;re here to provide expert guidance and personalized service.
               </p>
               <div className="px-4">

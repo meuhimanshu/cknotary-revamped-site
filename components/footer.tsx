@@ -17,12 +17,19 @@ export function Footer() {
           {/* About Section */}
           <div className="space-y-4 flex flex-col items-center sm:items-start text-center sm:text-left">
             <div className="mb-2">
-              <Image 
-                src="/cklogo.png" 
-                alt="Chelsea Kramer Notary Corporation" 
-                width={180}
-                height={54}
-                className="h-10 w-auto"
+              <Image
+                src="/lightmodeLogo.png"
+                alt="Sarah Jenkins Notary Corporation"
+                width={240}
+                height={72}
+                className="h-16 w-auto block dark:hidden"
+              />
+              <Image
+                src="/DarkmodeLogo.png"
+                alt="Sarah Jenkins Notary Corporation"
+                width={240}
+                height={72}
+                className="h-16 w-auto hidden dark:block"
               />
             </div>
             <p className="text-sm text-muted-foreground leading-relaxed">
@@ -60,20 +67,20 @@ export function Footer() {
               <div className="flex items-start gap-2 justify-center sm:justify-start">
                 <MapPin className="h-4 w-4 mt-0.5 flex-shrink-0" />
                 <div className="text-center sm:text-left">
-                  <p>101 – 5145 26th Street</p>
+                  <p>123 Maple Avenue</p>
                   <p>Vernon, BC</p>
                 </div>
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <Phone className="h-4 w-4 flex-shrink-0" />
-                <a href="tel:250-542-1111" className="hover:text-primary transition-colors">
-                  250-542-1111
+                <a href="tel:555-123-4567" className="hover:text-primary transition-colors">
+                  555-123-4567
                 </a>
               </div>
               <div className="flex items-center gap-2 justify-center sm:justify-start">
                 <Mail className="h-4 w-4 flex-shrink-0" />
                 <a href="mailto:info@cknotary.ca" className="hover:text-primary transition-colors break-all">
-                  info@cknotary.ca
+                  info@sjnotary.ca
                 </a>
               </div>
             </div>
@@ -122,7 +129,7 @@ export function Footer() {
                   <ExternalLink className="h-5 w-5" />
                 </a>
               </div>
-              </div>
+            </div>
 
             <div className="space-y-3 text-center lg:text-left">
               <p className="text-sm font-semibold text-foreground">About the Creator</p>
