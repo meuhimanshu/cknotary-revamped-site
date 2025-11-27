@@ -20,7 +20,7 @@ export default function HomePage() {
   return (
     <div className="flex flex-col w-full">
       {/* Hero Section */}
-      <section className="relative min-h-[500px] sm:min-h-[600px] md:min-h-[700px] flex items-center justify-center bg-gradient-to-br from-primary via-primary/95 to-primary/90 dark:from-gray-950 dark:via-gray-900 dark:to-black text-primary-foreground dark:text-foreground overflow-hidden w-full antialiased">
+      <section className="relative min-h-[calc(100vh-4rem)] sm:min-h-[620px] md:min-h-[720px] flex items-center justify-center bg-gradient-to-br from-primary via-primary/95 to-primary/90 dark:from-gray-950 dark:via-gray-900 dark:to-black text-primary-foreground dark:text-foreground overflow-hidden w-full antialiased py-16 sm:py-20 md:py-24">
         {/* Subtle Background Image */}
         <div className="absolute inset-0 opacity-[0.1] dark:opacity-[0.05]">
           <div
